@@ -15,4 +15,5 @@ return require('packer').startup(function(use)
   use 'fatih/vim-go'
   use 'tpope/vim-fugitive'
   use "ahmedkhalf/project.nvim"
+  use 'ryanoasis/vim-devicons'
 end)
