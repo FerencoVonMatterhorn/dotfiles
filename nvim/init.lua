@@ -1,3 +1,3 @@
-require("ferencovonmatterhorn.set")
+require("ferencovonmatterhorn")
 require("ferencovonmatterhorn/packer")
 require("ferencovonmatterhorn/keybindings")
