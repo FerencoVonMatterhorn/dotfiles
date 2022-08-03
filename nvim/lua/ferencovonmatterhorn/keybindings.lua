@@ -1,10 +1,12 @@
 vim.g.mapleader = " "
 
 -- write
-vim.keymap.set('n', '<Leader>w', ':write<cr>')
+vim.keymap.set('n', '<Leader>w', ':w<cr>')
 
 -- quit
-vim.keymap.set('n', '<Leader>q', ':quit<cr>')
+vim.keymap.set('n', '<Leader>q', ':q<cr>')
+vim.keymap.set('n', '<Leader>Q', ':q!<cr>')
+vim.keymap.set('n', '<Leader>wq', ':wq<cr>')
 
 -- undo
 vim.keymap.set('n', '<Leader>u', ':undo<cr>')
