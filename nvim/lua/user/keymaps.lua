@@ -32,9 +32,10 @@ keymap("n", "<S-Right>", ":vertical resize +2<CR>", opts)
 keymap('n', '<Leader>w', ':w<cr>', opts)
 
 -- quit
-keymap('n', '<Leader>q', ':q<cr>', opts)
+keymap('n', '<Leader>q', ':bd<cr>', opts)
 keymap('n', '<Leader>Q', ':q!<cr>', opts)
 keymap('n', '<Leader>wq', ':wq<cr>', opts)
+keymap('n', 'q', ':q<cr>', opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)

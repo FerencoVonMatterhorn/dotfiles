@@ -21,6 +21,7 @@ local servers = {
   "prosemd_lsp",
   "remark_ls",
   "tflint",
+  "terraformls",
 }
 
 lsp_installer.setup()
