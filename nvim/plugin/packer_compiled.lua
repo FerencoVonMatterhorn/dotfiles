@@ -224,15 +224,15 @@ _G.packer_plugins = {
     path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
-  },
-  ["vim-test"] = {
-    loaded = true,
-    path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/vim-test",
-    url = "https://github.com/vim-test/vim-test"
   }
 }
 
