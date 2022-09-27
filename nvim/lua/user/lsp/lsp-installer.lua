@@ -9,7 +9,6 @@ local servers = {
   "html",
   "emmet_ls",
   "stylelint_ls",
-  "tailwindcss",
   "tsserver",
   "pyright",
   "bashls",
