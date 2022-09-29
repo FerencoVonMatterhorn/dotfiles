@@ -8,7 +8,6 @@ local servers = {
   "cssls",
   "html",
   "emmet_ls",
-  "stylelint_ls",
   "tsserver",
   "pyright",
   "bashls",
@@ -20,8 +19,6 @@ local servers = {
   "gopls",
   "lemminx",
   "marksman",
-  "prosemd_lsp",
-  "remark_ls",
   "tflint",
   "terraformls",
 }
