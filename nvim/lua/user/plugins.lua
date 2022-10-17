@@ -36,6 +36,9 @@ packer.init {
       return require("packer.util").float { border = "rounded" }
     end,
   },
+  git = {
+    clone_timeout = 300, -- Timeout, in seconds, for git clones 
+  },
 }
 
 -- Install your plugins here
@@ -77,7 +80,8 @@ return packer.startup(function(use)
 
   -- LSP
   use { "neovim/nvim-lspconfig", commit = "2dd9e060f21eecd403736bef07ec83b73341d955" } -- enable LSP
-  use { "williamboman/nvim-lsp-installer", commit = "23820a878a5c2415bfd3b971d1fe3c79e4dd6763" } -- simple to use language server installer
+  use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"}
+  use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
   use { "jose-elias-alvarez/null-ls.nvim", commit = "643c67a296711ff40f1a4d1bec232fa20b179b90" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "0603e75fc4ecde1ee5a1b2fc8106ed6704f34d14" }
 
