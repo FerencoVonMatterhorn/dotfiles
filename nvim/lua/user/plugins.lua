@@ -37,7 +37,7 @@ packer.init {
     end,
   },
   git = {
-    clone_timeout = 300, -- Timeout, in seconds, for git clones 
+    clone_timeout = 300, -- Timeout, in seconds, for git clones
   },
 }
 
@@ -60,6 +60,8 @@ return packer.startup(function(use)
   use { 'iamcco/markdown-preview.nvim', commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96" }
   use { 'fatih/vim-go', commit = "22b2273cfe562ac1c1af976ce77f18a3b1776f3c" }
   use { 'norcalli/nvim-colorizer.lua', commit = "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6" }
+  use { 'folke/todo-comments.nvim', commit = "bca0e00644c22a3eecedce703c0db080dd6bdc55" }
+
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "9fba0cdd05382a427dafaa2b8ebb4aba99126bc0" }
@@ -80,7 +82,7 @@ return packer.startup(function(use)
 
   -- LSP
   use { "neovim/nvim-lspconfig", commit = "2dd9e060f21eecd403736bef07ec83b73341d955" } -- enable LSP
-  use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"}
+  use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12" }
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
   use { "jose-elias-alvarez/null-ls.nvim", commit = "643c67a296711ff40f1a4d1bec232fa20b179b90" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "0603e75fc4ecde1ee5a1b2fc8106ed6704f34d14" }
