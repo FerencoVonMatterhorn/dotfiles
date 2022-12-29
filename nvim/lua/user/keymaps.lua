@@ -57,18 +57,27 @@ keymap("i", "jk", "<ESC>", opts)
 -- Plugins --
 
 -- NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
-
+local nvim_tree_mappings = {
+  ["<leader>e"] = { ":NvimTreeToggle<CR>", "NvimTree" },
+}
 -- Telescope
-keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
-keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
-keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+local telescope_mappings = {
+  ['<leader>f'] = { name = "Telesope" },
+  ["<leader>fb"] = { ":Telescope buffers<CR>", "find buffers" },
+  ["<leader>ff"] = { ":Telescope find_files<CR>", "find files" },
+  ["<leader>ft"] = { ":Telescope live_grep<CR>", "live grep" },
+}
 
 -- Git
-keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+local git_mappings = {
+  ["<leader>gg"] = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "lazygit" },
+}
 
 -- Which-key
 local status_ok, which_key = pcall(require, "which-key")
 if not status_ok then
   return
 end
+which_key.register(git_mappings, opts)
+which_key.register(nvim_tree_mappings, opts)
+which_key.register(telescope_mappings, opts)
