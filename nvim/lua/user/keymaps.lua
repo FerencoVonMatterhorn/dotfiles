@@ -66,3 +66,9 @@ keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+
+-- Which-key
+local status_ok, which_key = pcall(require, "which-key")
+if not status_ok then
+  return
+end

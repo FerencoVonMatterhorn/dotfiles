@@ -9,11 +9,11 @@ if not status_cmp_ok then
   return
 end
 capabilities.textDocument.completion.completionItem.snippetSupport = false
-capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
 local status, jdtls = pcall(require, "jdtls")
 if not status then
-  print("not found")
+  print("jdtls not found")
   return
 end
 
@@ -49,13 +49,13 @@ local bundles = {}
 
 if JAVA_DAP_ACTIVE then
   vim.list_extend(bundles,
-    vim.split(vim.fn.glob(home .. "/git/github.com/microsoft/vscode-java-test/server/*.jar"), "\n"))
+    vim.split(vim.fn.glob(home .. "Code/vscode-java-test/server/*.jar"), "\n"))
   vim.list_extend(
     bundles,
     vim.split(
       vim.fn.glob(
         home ..
-        "/git/github.com/microsoft/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar"
+        "/Code/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar"
       ),
       "\n"
     )
@@ -77,7 +77,7 @@ local config = {
     "-Declipse.product=org.eclipse.jdt.ls.core.product",
     "-Dlog.protocol=true",
     "-Dlog.level=ALL",
-    "-javaagent:" .. home .. "/.local/share/java/lombok.jar",
+    "-javaagent:" .. home .. "/.local/share/nvim/mason/packages/jdtls/lombok.jar",
     "-Xms1g",
     "--add-modules=ALL-SYSTEM",
     "--add-opens",
@@ -87,14 +87,14 @@ local config = {
 
     -- 💀
     "-jar",
-    vim.fn.glob(home .. "/.local/share/nvim/lsp_servers/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
+    vim.fn.glob(home .. "/.local/share/nvim/mason/packages/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
     -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                       ^^^^^^^^^^^^^^
     -- Must point to the                                                     Change this to
     -- eclipse.jdt.ls installation                                           the actual version
 
     -- 💀
     "-configuration",
-    home .. "/.local/share/nvim/lsp_servers/jdtls/config_" .. CONFIG,
+    home .. "/.local/share/nvim/mason/packages/jdtls/config_" .. CONFIG,
     -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        ^^^^^^
     -- Must point to the                      Change to one of `linux`, `win` or `mac`
     -- eclipse.jdt.ls installation            Depending on your system.
@@ -105,7 +105,7 @@ local config = {
     workspace_dir,
   },
 
-  on_attach = require("fwiedmann.lsp.handlers").on_attach,
+  on_attach = require("user.lsp.handlers").on_attach,
   capabilities = capabilities,
 
   -- 💀

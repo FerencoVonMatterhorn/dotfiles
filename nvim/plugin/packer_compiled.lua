@@ -184,6 +184,11 @@ _G.packer_plugins = {
     path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
+  ["nvim-jdtls"] = {
+    loaded = true,
+    path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
+    url = "https://github.com/mfussenegger/nvim-jdtls"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -248,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

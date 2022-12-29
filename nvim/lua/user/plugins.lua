@@ -60,6 +60,7 @@ return packer.startup(function(use)
   use { 'fatih/vim-go', commit = "22b2273cfe562ac1c1af976ce77f18a3b1776f3c" }
   use { 'norcalli/nvim-colorizer.lua', commit = "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6" }
   use { 'folke/todo-comments.nvim', commit = "bca0e00644c22a3eecedce703c0db080dd6bdc55" }
+  use { "folke/which-key.nvim", commit = "6885b669523ff4238de99a7c653d47b081b5506d" }
 
 
   -- Colorschemes
@@ -85,6 +86,7 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
   use { "jose-elias-alvarez/null-ls.nvim", commit = "643c67a296711ff40f1a4d1bec232fa20b179b90" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "0603e75fc4ecde1ee5a1b2fc8106ed6704f34d14" }
+  use { 'mfussenegger/nvim-jdtls', commit = "a5c6f38f8151d7b4f5b32c005a95022fa66f4c9d" }
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim", commit = "f174a0367b4fc7cb17710d867e25ea792311c418" }
