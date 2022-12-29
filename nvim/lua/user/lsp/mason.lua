@@ -16,6 +16,8 @@ local servers = {
   "marksman",
   "tflint",
   "terraformls",
+  "kotlin_language_server",
+  "jdtls"
 }
 
 local settings = {
