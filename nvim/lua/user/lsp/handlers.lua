@@ -66,7 +66,7 @@ local function lsp_keymaps(bufnr)
     ['<leader>gd'] = { [[<cmd>lua vim.lsp.buf.definition()<CR>]], "declaration" },
     ['<leader>gI'] = { [[<cmd>lua vim.lsp.buf.implementation()<CR>]], "implementation" },
     ['<leader>gr'] = { [[<cmd>lua vim.lsp.buf.references()<CR>]], "references" },
-    ['<leader>gl'] = { [[<cmd>lua vim.lsp.buf.open_float()<CR>]], "diagnostic" },
+    ['<leader>gl'] = { [[<cmd>lua vim.diagnostic.open_float()<CR>]], "diagnostic" },
     ['<leader>gn'] = { [[<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>]], "next buffer" },
     ['<leader>gp'] = { [[<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>]], "next buffer" },
 
