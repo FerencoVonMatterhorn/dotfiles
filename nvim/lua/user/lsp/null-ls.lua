@@ -12,6 +12,7 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup {
   debug = false,
   sources = {
+    formatting.eslint_d,
     formatting.prettier.with {
       filetypes = {
         "javascript",
@@ -35,5 +36,6 @@ null_ls.setup {
     formatting.black.with { extra_args = { "--fast" } },
     formatting.google_java_format,
     diagnostics.flake8,
+    diagnostics.eslint_d
   },
 }
