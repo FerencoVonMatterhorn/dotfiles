@@ -46,7 +46,7 @@ return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" } -- Autopairs, integrates with both cmp and treesitter
+  use { "windwp/nvim-autopairs", commit = "31042a5823b55c4bfb30efcbba2fc1b5b53f90dc" } -- Autopairs, integrates with both cmp and treesitter
   use { "nvim-tree/nvim-web-devicons", commit = "9061e2d355ecaa2b588b71a35e7a11358a7e51e1" }
   use { "nvim-tree/nvim-tree.lua", commit = "9e4c39572f631bb60ee15cb9d46e1daa9927a45e" }
   use { "akinsho/bufferline.nvim", commit = "0073e32fbf391df5d83c1f4531bb0a41c85e0bec" }
@@ -93,8 +93,9 @@ return packer.startup(function(use)
 
   -- Treesitter
   use {
-    "nvim-treesitter/nvim-treesitter", commit = "8f927a4d50716e534c5845e835625962adf878e1"
+    "nvim-treesitter/nvim-treesitter", commit = "f3b8f00143669b7dd8d22f6bedbe98a0ff1a8317"
   }
+  use { 'nvim-treesitter/nvim-treesitter-context', commit = "cacee4828152dd3a83736169ae61bbcd29a3d213" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", commit = "56e01cb0ea52635854e97bd2dd2587c8ebfab978" }
