@@ -86,7 +86,7 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
   use { "jose-elias-alvarez/null-ls.nvim", commit = "643c67a296711ff40f1a4d1bec232fa20b179b90" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "0603e75fc4ecde1ee5a1b2fc8106ed6704f34d14" }
-  use { 'mfussenegger/nvim-jdtls', commit = "a5c6f38f8151d7b4f5b32c005a95022fa66f4c9d" }
+  use { 'mfussenegger/nvim-jdtls', commit = "beb9101fb4a8a4f2655e691980b4c82a27d2e920" }
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim", commit = "f174a0367b4fc7cb17710d867e25ea792311c418" }

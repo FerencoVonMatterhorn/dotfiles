@@ -31,7 +31,7 @@ null_ls.setup {
         "graphql",
         "handlebars",
       },
-      extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+      extra_args = { "--single-quote", "--jsx-single-quote", "--no-bracket-spacing" },
     },
     formatting.black.with { extra_args = { "--fast" } },
     formatting.google_java_format,
