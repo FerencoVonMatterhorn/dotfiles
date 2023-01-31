@@ -61,6 +61,7 @@ return packer.startup(function(use)
   use { 'norcalli/nvim-colorizer.lua', commit = "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6" }
   use { 'folke/todo-comments.nvim', commit = "bca0e00644c22a3eecedce703c0db080dd6bdc55" }
   use { "folke/which-key.nvim", commit = "6885b669523ff4238de99a7c653d47b081b5506d" }
+  use { "numToStr/Comment.nvim", commit = "eab2c83a0207369900e92783f56990808082eac2" }
 
 
   -- Colorschemes
