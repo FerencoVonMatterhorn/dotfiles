@@ -62,7 +62,7 @@ return packer.startup(function(use)
   use { 'folke/todo-comments.nvim', commit = "bca0e00644c22a3eecedce703c0db080dd6bdc55" }
   use { "folke/which-key.nvim", commit = "6885b669523ff4238de99a7c653d47b081b5506d" }
   use { "numToStr/Comment.nvim", commit = "eab2c83a0207369900e92783f56990808082eac2" }
-
+  use { 'krivahtoo/silicon.nvim', run = './install.sh' }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "9fba0cdd05382a427dafaa2b8ebb4aba99126bc0" }

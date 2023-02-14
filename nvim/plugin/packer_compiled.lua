@@ -229,6 +229,11 @@ _G.packer_plugins = {
     path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["silicon.nvim"] = {
+    loaded = true,
+    path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/silicon.nvim",
+    url = "https://github.com/krivahtoo/silicon.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/horvayf/.local/share/nvim/site/pack/packer/start/telescope.nvim",
